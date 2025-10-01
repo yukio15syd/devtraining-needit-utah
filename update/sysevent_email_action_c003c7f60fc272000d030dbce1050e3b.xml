@@ -5,10 +5,11 @@
         <active>true</active>
         <advanced_condition/>
         <affected_field_on_event/>
-        <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
+        <category display_value="email" name="email">e16bcc82c3d8b2105b1371fdd40131db</category>
         <collection>x_58872_needit_needit_task</collection>
         <condition/>
         <content_type>text/html</content_type>
+        <default_digest>false</default_digest>
         <default_interval/>
         <description/>
         <digest_from/>
@@ -19,14 +20,16 @@
         <digest_subject/>
         <digest_template/>
         <digest_text/>
+        <digest_type>single</digest_type>
         <digestable>false</digestable>
+        <enable_dynamic_translation>false</enable_dynamic_translation>
         <event_name>x_58872_needit.overdueNeedItTask</event_name>
         <event_parm_1>false</event_parm_1>
         <event_parm_2>false</event_parm_2>
         <exclude_delegates>false</exclude_delegates>
         <force_delivery>false</force_delivery>
         <from/>
-        <generation_type>event</generation_type>
+        <generation_type>triggered</generation_type>
         <importance/>
         <include_attachments>false</include_attachments>
         <item>event.parm1</item>
@@ -35,7 +38,7 @@
         <message/>
         <message_html><![CDATA[<p>Dear ${assigned_to.first_name},</p>
 <p>An overdue&nbsp;NeedIt Task is assigned to you:</p>
-<p>Number: ${number}<br />Short description: ${short_description}</p>
+<p>Number: ${number}<br>Short description: ${short_description}</p>
 <p>Please complete this task as soon as possible.</p>
 <p>${mail_script:CountOverdueNeedItTasksAssignedTo}</p>
 <p>&nbsp;</p>
@@ -63,7 +66,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c003c7f60fc272000d030dbce1050e3b</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name>Overdue NeedIt Task</sys_name>
         <sys_overrides/>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
@@ -71,7 +74,7 @@
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sysevent_email_action_c003c7f60fc272000d030dbce1050e3b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-06-08 16:55:11</sys_updated_on>
+        <sys_updated_on>2025-10-01 12:09:42</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>
